@@ -39,6 +39,7 @@ func main() {
 
 	// Health endpoint
 	router.GET("/health", routers.HealthGET)
+	router.GET("/test", routers.TestGET)
 
 	log.Info("Starting Server on port " + port())
 
